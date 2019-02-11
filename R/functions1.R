@@ -21,5 +21,7 @@ get_latest_file  = function(pattern){
 
   ind = which.max(file_dates)
 
-  return(list(latest_file_name = file_names[ind]))
+  print(file_names[ind])
+
+  return(file_names[ind])
 }
