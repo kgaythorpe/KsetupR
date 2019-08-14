@@ -4,11 +4,12 @@
 \alias{get_latest_file}
 \title{Get the name of the latest version of a file or directory}
 \usage{
-get_latest_file(pattern)
+get_latest_file(path = NA, pattern)
 }
 \arguments{
-\item{pattern}{Add the pattern that the file or directory should start with.
-If the file is in another directory this should also have the file path}
+\item{path}{path to files, defaults to wd}
+
+\item{pattern}{Add the pattern that the file or directory should start with.}
 }
 \value{
 latest_file_name
