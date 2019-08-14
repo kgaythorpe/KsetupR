@@ -116,7 +116,9 @@ numbers2words <- function(x){
 check_utf8 = function(df){
 
   for(i in 1:ncol(df)){
+    if(!is.numeric(df[, i])){
     df[, i] =  stringi::stri_trans_general(str = df[, i], id = "Latin-ASCII")
+    }
   }
 
 
